@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>WEB TI</title>
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
@@ -13,61 +14,73 @@
 </head>
 
 <body>
-<!-- navbar -->
-    <nav class="navbar navbar-expand-lg" data-bs-theme="dark" style="background-color: #00575D;">
-            <div class="container">
+    <section class=" sticky-top">
+        <nav class="navbar navbar-expand-lg" data-bs-theme="dark" style="background-color: #00575D;">
+            <div class="container-fluid me-3 ms-3">
                 <a class="navbar-brand" href="#">
                     <img src="image/Asset 22.png" width="150" height="60">
                 </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav nav nav-tabs  d-flex">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pendaftaran</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                                aria-expanded="false">
+                                Akademik
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="#">Kurikulum</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Jadwal Kuliah</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Kalender Akademik</a>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#"
+                                        id="navbarDropdown3">Konsentrasi</a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                                        <li><a class="dropdown-item" href="#">KBJ</a></li>
+                                        <li><a class="dropdown-item" href="#">KCV</a></li>
+                                        <li><a class="dropdown-item" href="#">RPL</a></li>
+                                    </ul>
+                            </ul>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Galeri
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="foto.html">Foto</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="video.html">Video</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="virtual-tour.html">Virtual Tour</a>
+                                </li>
+                            </ul>
+                        </li>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        <div class="container">
-            <a class="navbar-brand" href="#"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav nav nav-tabs navbar-left justify-content-end me-auto mb-2 mb-lg-0 d-flex gap-3">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Beranda</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pendaftaran</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-                            aria-expanded="false">
-                            Akademik
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li> <hr class="dropdown-divider"> <a class="dropdown-item" href="#">Kurikulum</a></li>
-                            <li> <hr class="dropdown-divider"> <a class="dropdown-item" href="#">Jadwal Kuliah</a></li>
-                            <li> <hr class="dropdown-divider"> <a class="dropdown-item" href="#">Kalender Akademik</a></li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-                                    aria-expanded="false">Konsentrasi</a>
-                                <ul class="dropdown-menu">
-                                    <li> <hr class="dropdown-divider"> <a class="dropdown-item" href="#">KBJ</a></li>
-                                    <li> <hr class="dropdown-divider"> <a class="dropdown-item" href="#">KCV</a></li>
-                                    <li> <hr class="dropdown-divider"> <a class="dropdown-item" href="#">RPL</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Galeri
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li> <hr class="dropdown-divider"> <a class="dropdown-item" href="#">Foto</a></li>
-                            <li> <hr class="dropdown-divider"> <a class="dropdown-item" href="#">Video</a></li>
-                            <li> <hr class="dropdown-divider"> <a class="dropdown-item" href="#">Virtual Tour</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+        </nav>
+    </section>
 
             
 <!-- carousel -->
@@ -140,48 +153,193 @@
     </div>
 </div>
 
+<section>
+    <div class="container text-start justify-content-center">
+        <h6 class="text-uppercase fw-bold mb-4 border-bottom">
+            KEMITRAAN
+        </h6>
+        <div class="justify-content-center">
+            <div class="d-flex gap-5" width="auto">
+                <div class="container justify-content-center">
+                    <a href="#" class="me-4 text-reset">
+                        <img src="image/image-removebg-preview (1).png" width="200" height="100">
+                    </a>
+                </div>
+                <div class="container justify-content-center">
+                    <a href="#" class="me-4 text-reset">
+                        <img src="image/image-removebg-preview (2).png" width="140" height="50">
+                    </a>
+                </div>
+                <div class="container justify-content-center">
+                    <a href="#" class="me-4 text-reset">
+                        <img src="image/image-removebg-preview (3).png" width="200" height="100">
+                    </a>
+                </div>
+                <div class="container justify-content-center">
+                    <a href="#" class="me-4 text-reset">
+                        <img src="image/image-removebg-preview (4).png" width="60" height="60">
+                    </a>
+                </div>
+            </div>
+            <div class="d-flex" width="auto">
+                <div class="container justify-content-center">
+                    <a href="#" class="me-4 text-reset">
+                        <img src="image/image-removebg-preview (6).png" width="170" height="80">
+                    </a>
+                </div>
+                <div class="container justify-content-center">
+                    <a href="#" class="me-4 text-reset">
+                        <img src="image/image-removebg-preview (7).png" width="170" height="80">
+                    </a>
+                </div>
+                <div class="container justify-content-center">
+                    <a href="#" class="me-4 text-reset">
+                        <img src="image/image-removebg-preview (8).png" width="90" height="90">
+                    </a>
+                </div>
+                <div class="container justify-content-center">
+                    <a href="#" class="me-4 text-reset">
+                        <img src="image/image-removebg-preview.png" width="150" height="60">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
 <!-- footer -->
-<footer class="pt-4 pb-4" style="background-color: #00575D">
-    <div class="container d-flex">
-    <p class="text-first"><strong><u>
-        KEMITRAAN
-    </u></strong></p>
-    <div class="container"  style="display: flex;">
-        <a class="d-flex" href="#">
-            <img src="image/image-removebg-preview (1).png" width="170" height="80">
-            <img src="image/image-removebg-preview (2).png" width="150" height="60">
-            <img src="image/image-removebg-preview (3).png" width="150" height="60">
-            <img src="image/image-removebg-preview (4).png" width="60" height="60">
-            <img src="image/image-removebg-preview (6).png" width="170" height="80">
-            <img src="image/image-removebg-preview (7).png" width="170" height="80">
-            <img src="image/image-removebg-preview (8).png" width="60" height="60">
-            <img src="image/image-removebg-preview.png" width="150" height="60">
-        </a>
-    </div>
-        <div class="container">
-            <p class="text-first"><strong><u>
-                        KONTAK
-                    </u></strong></p>
-        </div>
-        <div class="container">
-            <p class="text-first"><strong><u>
+<!-- Footer -->
+<footer class="text-start text-lg-start mt-6" data-bs-theme="dark" style="background-color: #00575D;">
+    <!-- Section: Links  -->
+    <!-- Section: Links  -->
+    <section class="">
+        <div class="container text-start text-md-start">
+            <!-- Grid row -->
+            <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4 mt-5">Kontak</h6>
+                    <p>
+                        <i class="fas fa-envelope me-3"></i>
+                        informatika@eng.unri.ac.id
+                    </p>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                </div>
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mb-4 mt-5">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
                         ALAMAT
-                    </u></strong></p>
+                    </h6>
+                    <p>
+                        <a href="#!" class="text-reset">
+                            Gedung C lantai 2 <br>
+                            Fakultas Teknik Universitas Riau <br>
+                            Kampus Binawidya</a>
+
+                    </p>
+                    <p>
+                        <a href="https://goo.gl/maps/3y2b39AU3PKni4LP8" class="text-reset">Jl. HR Soebrantas KM. 12.5,
+                            Simpang Baru, Binawidya, Pekanbaru – 28293</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 mt-5">
+                    <!-- Content -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        <i class="fas fa-gem me-3"></i>Company name
+                    </h6>
+                    <p>
+                        Here you can use rows and columns to organize your footer content. Lorem ipsum
+                        dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                </div>
+            </div>
+            <!-- Grid row -->
         </div>
-    </div>
-    <div class="container">
+    </section>
 
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2023 Copyright:
     </div>
+    <!-- Copyright -->
 </footer>
+<script src="style/js/bootstrap.js"></script>
+<script src="style/js/bootstrap.bundle.min.js"></script>
+<!-- <script src="style/js/bootstrap.min.js"></script> -->
 
-<script src="/js/bootstrap.js"></script>
-        
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-            crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
-            integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
-            crossorigin="anonymous"></script>
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+<script>
+    // Mengaktifkan fitur Submenus
+    var dropdownSubmenus = document.querySelectorAll('.dropdown-submenu');
+
+    dropdownSubmenus.forEach(function (dropdownSubmenu) {
+        dropdownSubmenu.addEventListener('mouseover', function () {
+            var dropdownMenu = this.querySelector('.dropdown-menu');
+            dropdownMenu.classList.add('show');
+        });
+
+        dropdownSubmenu.addEventListener('mouseout', function () {
+            var dropdownMenu = this.querySelector('.dropdown-menu');
+            dropdownMenu.classList.remove('show');
+        });
+    });
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+<script src="js/vendor/bootstrap.min.js"></script>
+
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        // navigation click actions 
+        $('.scroll-link').on('click', function (event) {
+            event.preventDefault();
+            var sectionID = $(this).attr("data-id");
+            scrollToID('#' + sectionID, 750);
+        });
+        // scroll to top action
+        $('.scroll-top').on('click', function (event) {
+            event.preventDefault();
+            $('html, body').animate({ scrollTop: 0 }, 'slow');
+        });
+        // mobile nav toggle
+        $('#nav-toggle').on('click', function (event) {
+            event.preventDefault();
+            $('#main-nav').toggleClass("open");
+        });
+    });
+    // scroll function
+    function scrollToID(id, speed) {
+        var offSet = 50;
+        var targetOffset = $(id).offset().top - offSet;
+        var mainNav = $('#main-nav');
+        $('html,body').animate({ scrollTop: targetOffset }, speed);
+        if (mainNav.hasClass("open")) {
+            mainNav.css("height", "1px").removeClass("in").addClass("collapse");
+            mainNav.removeClass("open");
+        }
+    }
+    if (typeof console === "undefined") {
+        console = {
+            log: function () { }
+        };
+    }
+</script>
 </body>
 
 </html>
