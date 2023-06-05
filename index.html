@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>WEB TI</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style/css/bootstrap.css">
     <link rel="stylesheet" href="style/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
@@ -15,71 +15,119 @@
 
 <body>
     <section class=" sticky-top">
-        <nav class="navbar navbar-expand-lg" data-bs-theme="dark" style="background-color: #00575D;">
-            <div class="container-fluid me-3 ms-3">
+        <nav class="navbar navbar-dark navbar-expand-lg" data-bs-theme="dark" style="background-color: #00575D;">
+            <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img src="image/Asset 22.png" width="150" height="60">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler btn btn-secondary dropdown-toggle" type="button" data-mdb-toggle="dropdown" data-mdb-auto-close="outside" aria-expanded="false" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+                    aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                    <ul class="navbar-nav nav nav-tabs  d-flex">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">Beranda</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Pendaftaran</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-                                aria-expanded="false">
-                                Akademik
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a class="dropdown-item" href="#">Kurikulum</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">Jadwal Kuliah</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">Kalender Akademik</a>
-                                </li>
-                                <li class="dropdown-submenu">
-                                    <a class="dropdown-item dropdown-toggle" href="#"
-                                        id="navbarDropdown3">Konsentrasi</a>
-                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
-                                        <li><a class="dropdown-item" href="#">KBJ</a></li>
-                                        <li><a class="dropdown-item" href="#">KCV</a></li>
-                                        <li><a class="dropdown-item" href="#">RPL</a></li>
-                                    </ul>
-                            </ul>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Galeri
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a class="dropdown-item" href="foto.html">Foto</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="video.html">Video</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="virtual-tour.html">Virtual Tour</a>
-                                </li>
-                            </ul>
-                        </li>
-                        </li>
-                    </ul>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header" style="background-color: #00575D;">
+                        <span class="navbar-toggler-icon"></span>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body" style="background-color: #00575D;">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-1" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-succes" type="submit">Search</button>
+                            </form>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Beranda</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Profile
+                                </a>
+                                <ul class="dropdown-menu" style="background-color: #00575D;">
+                                    <li>
+                                        <a class="dropdown-item" href="Sejarah.html">Sejarah</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="visi-dan-misi.html">Visi dan Misi</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="tujuan.html">Tujuan</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="sasaran.html">Sasaran</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="strategi.html">Strategi</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="dosen.html">Dosen</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="Tendik.html">Tendik</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="labjarkom.html">Lab Jarkom</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="labrpl.html">Lab RPL</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="kontak.html">Kontak</a>
+                                    </li>
+                                </ul>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                                    Akademik
+                                </a>
+                                <ul class="dropdown-menu" style="background-color: #00575D;">
+                                    <li>
+                                        <a class="dropdown-item" href="kurikulum.html">Kurikulum</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="Jadwal-kuliah.html">Jadwal Kuliah</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="Akreditasi.html">Akreditasi</a>
+                                    </li>
+                            
+                                    <li>
+                                        <a class="dropdown-item" href="kalender-Akademik.html">Kalender Akademik</a>
+                                    </li>
+                            
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown3">Konsentrasi</a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown3" style="background-color: #00575D;">
+                                            <li><a class="dropdown-item" href="#">KBJ</a></li>
+                                            <li><a class="dropdown-item" href="#">KCV</a></li>
+                                            <li><a class="dropdown-item" href="#">RPL</a></li>
+                                        </ul>
+                                </ul>
+                            </li>
+                            
+                            <li class="nav-item dropdown me-3">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Galeri
+                                </a>
+                                <ul class="dropdown-menu" style="background-color: #00575D;">
+                                    <li>
+                                        <a class="dropdown-item" href="foto.html">Foto</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="video.html">Video</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="virtual-tour.html">Virtual Tour</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
+        
     </section>
 
             
@@ -107,9 +155,10 @@
         <span class="visually-hidden">Next</span>
     </button>
 </div>
+
 <!-- Postingan -->
 <div class="container d-flex">
-    <div class="container" width="450">
+    <div class="container" width="650">
         <h4> Ani Mardhatillah, mahasiswa Teknik Informatika Juara 1 Lomba MTQ Kecamatan</h4>
 
         <img src="https://informatika.ft.unri.ac.id/wp-content/uploads/photo_2022-10-12_11-37-23.jpg" width="530px"
@@ -117,41 +166,60 @@
 
         <h6>Ani Mardhatillah, mahasiswa Teknik Informatika UNRI menjadi juara 1 pada lomba Musabaqah Tilawatil Quran
             (MTQ) ke IV
-            Tingkat Kecamatann Bathin Solapan, Kabupaten Bengkalis. Acara ini diselenggarakan mulai tanggal 16-23
-            September 2022 di
-            Kantor Camat Bathin Solapan.</h6>
+            Tingkat Kecamatann...</h6>
     </div>
 
-    <div class="container" style="background-color: rgb(201, 232, 232);" width="300px">
+    <div class="container" style="background-color: rgb(201, 232, 232);" width="10px">
 
     </div>
 </div>
 
 <!-- card -->
-<div class="container d-flex gap-5" style="padding:auto; margin : width: fit-content;">
-    <div class="card" style="width: 18rem;">
-        <img src="image/kbjj.png" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">
-            <a href="#" class="btn">Komputasi Berbasis Jaringan</a></h5>
+<section id="about" class="page-section gap-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="service-item">
+                    <div class="icon">
+                        <img src="image/kbjj.png" alt="">
+                    </div>
+                    <h4>Komputasi Berbasis Jaringan</h4>
+                    <div class="line-dec"></div>
+                    <div class="primary-blue-button">
+                        <a href="#" class="scroll-link" data-id="portfolio">Continue Reading</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="service-item">
+                    <div class="icon">
+                        <img src="image/kcvv.png" alt="">
+                    </div>
+                    <h4>Komputasi Cerdas Komputer</h4>
+                    <div class="line-dec"></div>
+                    
+                    <div class="primary-blue-button">
+                        <a href="#" class="scroll-link" data-id="portfolio">Continue Reading</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="service-item">
+                    <div class="icon">
+                        <img src="image/rplll.png" alt="">
+                    </div>
+                    <h4>Rekayasa Perangkat Lunak</h4>
+                    <div class="line-dec"></div>
+                    <div class="primary-blue-button">
+                        <a href="#" class="scroll-link" data-id="portfolio">Continue Reading</a>
+                    </div>
+                </div>
+            </div>
+                </div>
+            </div>
         </div>
     </div>
-
-    <div class="card" style="width: 18rem;">
-        <img src="image/kcvv.png" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title"><a href="#" class="btn">Komputasi Cerdas Visual</a></h5>
-        </div>
-    </div>
-
-    <div class="card" style="width: 18rem;">
-        <img src="image/rplll.png" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">
-            <a href="#" class="btn">Rekayasa Perangkat Lunak</a></h5>
-        </div>
-    </div>
-</div>
+</section>
 
 <section>
     <div class="container text-start justify-content-center">
@@ -218,49 +286,36 @@
             <!-- Grid row -->
             <div class="row mt-3">
                 <!-- Grid column -->
-                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-2">
                     <!-- Links -->
-                    <h6 class="text-uppercase fw-bold mb-4 mt-5">Kontak</h6>
-                    <p>
-                        <i class="fas fa-envelope me-3"></i>
-                        informatika@eng.unri.ac.id
-                    </p>
-                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-                </div>
-
-                <!-- Grid column -->
-                <div class="col-md-3 col-lg-2 col-xl-2 mb-4 mt-5">
-                    <!-- Links -->
-                    <h6 class="text-uppercase fw-bold mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4 mt-5">
                         ALAMAT
                     </h6>
-                    <p>
-                        <a href="#!" class="text-reset">
-                            Gedung C lantai 2 <br>
-                            Fakultas Teknik Universitas Riau <br>
-                            Kampus Binawidya</a>
-
-                    </p>
-                    <p>
-                        <a href="https://goo.gl/maps/3y2b39AU3PKni4LP8" class="text-reset">Jl. HR Soebrantas KM. 12.5,
-                            Simpang Baru, Binawidya, Pekanbaru – 28293</a>
-                    </p>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3989.6782531652107!2d101.3731917!3d0.4800987!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d5a902b948f0bd%3A0xb04455715285d3aa!2sTeknik%20Elektro%20Universitas%20Riau!5e0!3m2!1sid!2sid!4v1685928191194!5m2!1sid!2sid"
+                        width="450" height="150" frameboarder="0" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <!-- Grid column -->
-
-                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 mt-5">
-                    <!-- Content -->
-                    <h6 class="text-uppercase fw-bold mb-4">
-                        <i class="fas fa-gem me-3"></i>Company name
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-2">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4 mt-5">
+                        <a href="kontak.html" class="text-reset" target="_blank" rel="noopener noreferrer">
+                            Kontak
+                        </a>
                     </h6>
-                    <p>
-                        Here you can use rows and columns to organize your footer content. Lorem ipsum
-                        dolor sit amet, consectetur adipisicing elit.
-                    </p>
+
+                    <li><em>Email</em>: informatika@eng.unri.ac.id</li>
                 </div>
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-2" style="margin-top: 50px;">
+                    <!-- Content -->
+                    <a href="#" class="me-4 text-reset">
+                        <img src="http://informatika.ft.unri.ac.id/wp-content/uploads/akreditasi-ti-b.png">
+                    </a>
+                </div>
+
             </div>
             <!-- Grid row -->
         </div>
