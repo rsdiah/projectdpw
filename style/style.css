@@ -38,6 +38,7 @@
 .navbar-nav :hover a:hover {
     color: #000;
     background-color: #DFF6FF;
+
 }
 .navbar-nav li:hover a {
     color: #DFF6FF;
@@ -51,6 +52,7 @@
 
 .navbar-nav ul li:hover {
     background: #DFF6FF;
+    
 }
 
 .navbar-nav ul li:hover a {
@@ -87,10 +89,323 @@
     top: 0;
 }
 #about {
-    padding: 150px 0px;
+    padding: 20px 0px;
     background-image: url(../image/Desain\ dan\ Pemrograman\ Web.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    
+    opacity: 90%;
+}
+
+.grid figure {
+    position: relative;
+    float: center;
+    overflow: hidden;
+    width: 350px;
+    height: 250px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.grid figure img {
+    position: relative;
+    display: flex;
+    min-height: 100%;
+    max-width: 100%;
+    opacity: 0.8;
+}
+
+.grid figure figcaption {
+    padding: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.grid figure figcaption,
+.grid figure figcaption>a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+    pointer-events: none;
+}
+
+figure.effect-lexi:hover {
+    background: #0a0a0a;
+}
+
+figure.effect-lexi:hover figcaption::before {
+    background: rgba(0, 0, 0, 0.25);
+}
+
+figure.effect-lexi p {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 0 1.5em .3em 0;
+    width: 160px;
+    text-align: right;
+    opacity: 0;
+    -webkit-transform: translate3d(20px, 20px, 0);
+    transform: translate3d(20px, 20px, 0);
+}
+
+figure.effect-lexi img {
+    margin: -10px 0 0 -10px;
+    max-width: none;
+    width: -webkit-calc(100% + 10px);
+    width: calc(100% + 10px);
+    opacity: 0.9;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(10px, 10px, 0);
+    transform: translate3d(10px, 10px, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+figure.effect-lexi:hover h2,
+figure.effect-lexi:hover p {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+figure.effect-lexi:hover img {
+    opacity: 0.6;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+figure.effect-lexi:hover figcaption::before {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+}
+
+figure.effect-lexi figcaption::before {
+    position: absolute;
+    right: -100px;
+    bottom: -100px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 900px rgba(255, 255, 255, 0.2);
+    content: '';
+    opacity: 0;
+    -webkit-transform: scale3d(0.5, 0.5, 1);
+    transform: scale3d(0.5, 0.5, 1);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+.tm-section-mb {
+    margin-bottom: 40px;
+}
+
+.tm-section-pb {
+    padding-bottom: 120px;
+}
+
+.tm-section-pt {
+    padding-top: 135px;
+}
+
+figure.effect-lexi figcaption::before,
+figure.effect-lexi p {
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+}
+.tm-section-2-header {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.tm-section-2-inner,
+.tm-section-3-inner {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.tm-section-3 {
+    min-height: 560px;
+}
+
+.tm-section-2-left {
+    display: flex;
+    width: 50%;
+    min-height: 560px;
+    -webkit-clip-path: polygon(14% 0%, 100% 0%, 86% 100%, 0% 100%);
+    clip-path: polygon(14% 0%, 100% 0%, 86% 100%, 0% 100%);
+}
+
+
+.tm-section-2-right {
+    padding: 70px 120px 40px;
+    width: 50%;
+    margin-left: -40px;
+    -webkit-clip-path: polygon(14% 0%, 100% 0%, 86% 100%, 0% 100%);
+    clip-path: polygon(14% 0%, 100% 0%, 86% 100%, 0% 100%);
+}
+
+.tm-img {
+    width: 49%;
+}
+
+
+.tm-section-3-left {
+    padding: 70px 100px 80px 120px;
+    width: 50%;
+    -webkit-clip-path: polygon(0 0, 86% 0, 100% 100%, 14% 100%);
+    clip-path: polygon(0 0, 86% 0, 100% 100%, 14% 100%);
+    min-height: 560px;
+}
+
+.tm-section-3-right {
+    width: 50%;
+    height: 100%;
+    -webkit-clip-path: polygon(0 0, 86% 0, 100% 100%, 14% 100%);
+    clip-path: polygon(0 0, 86% 0, 100% 100%, 14% 100%);
+    /*https://bennettfeely.com/clippy/*/
+    margin-left: -40px;
+}
+
+.tm-p-ml {
+    margin-left: -35px;
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 15px;
+    padding-bottom: 25px;
+}
+
+.slick-dots li button:before {
+    font-size: 75px;
+    font-weight: 700;
+    content: '-';
+    opacity: 1;
+    color: #AB9376;
+    transition: all 0.3s ease;
+}
+
+.slick-dots li.slick-active button:before,
+.slick-dots li:hover button:before {
+    opacity: 1;
+    color: #786249;
+}
+
+.slick-dots li button {
+    width: 30px;
+}
+
+.slick-dots li {
+    margin: 0 10px;
+}
+
+.tm-contact-left-col {
+    min-height: 600px;
+}
+
+.tm-contact-left {
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(47% at 50% 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tm-contact-left-inner {
+    width: 50%;
+}
+
+.tm-contact-form {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.tm-contact-header {
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+.tm-contact-link {
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.tm-contact-link:hover,
+.tm-contact-link:focus {
+    color: white;
+}
+
+.form-control {
+    border: none;
+    border-bottom: 1px solid #CC9999;
+    border-radius: 0;
+}
+
+.form-control:focus {
+    border-bottom: 2px solid #ad0c10;
+    box-shadow: none;
+}
+
+.btn-primary {
+    background-color: #CC9999;
+    border-color: #CC9999;
+}
+
+.btn-primary:hover {
+    background-color: #ac4747;
+    border-color: #ac4747;
+}
+
+.tm-btn-round {
+    padding: 26px 20px;
+    border-radius: 50%;
+}
+
+.tm-fl-right {
+    float: right;
+}
+
+.tm-mb-25 {
+    margin-bottom: 25px;
+}
+
+.tm-mb-35 {
+    margin-bottom: 35px;
+}
+
+.tm-mb-40 {
+    margin-bottom: 40px;
+}
+
+.tm-mb-45 {
+    margin-bottom: 45px;
+}
+
+.tm-mb-50 {
+    margin-bottom: 50px;
+}
+
+.tm-gallery-pad {
+    padding: 30px 60px;
+}
+
+.tm-gallery-item {
+    margin: 10px;
 }
